@@ -1,1 +1,102 @@
-respuestas
+Ejercicio 1: Verificar la Instalación de Git
+
+¿Qué comando debes usar para verificar la versión de Git?
+git -v
+
+
+Ejercicio 2: Crear un Directorio de Trabajo
+¿Qué comando usas para crear un nuevo directorio?
+mkdir <nombre-directorio>
+
+¿Cómo puedes cambiar a un directorio específico desde la terminal?
+Con el comando: cd <ruta_del_archivo>
+
+
+Ejercicio 3: Inicializar un Repositorio Git
+¿Qué comando usas para inicializar Git en un directorio?
+git init
+
+¿Cómo puedes confirmar que Git ha sido inicializado correctamente?
+Con el comando git status puedo verificar el estado del repositorio.
+Si quiero verificar que se a inicializado el repositorio creandose la carpeta .git en mi directorio
+uso el comando -ls -la o Get-ChildItem -Hidden pues este se crea como un archivo oculto.
+
+
+Ejercicio 4: Comprobar el Estado del Repositorio
+¿Qué comando usas para comprobar el estado del repositorio?
+git status
+
+¿Qué significa cuando Git dice que no hay archivos rastreados?
+Quiere decir que no hemos añadido ningún archivo al area de preparación.
+
+
+Ejercicio 5: Crear un Archivo y Verificar el Estado
+¿Qué comando usas para crear un archivo nuevo desde la terminal?
+echo "contenido" > nombre-archivo.md 
+
+¿Qué diferencia observas en el estado del repositorio después de crear el archivo?
+El archivo creado anteriormente README.md no esta rastreado y debe añadirse con git add para luego hacer commit.
+
+
+
+Ejercicio 6: Añadir un Archivo al Área de Preparación
+¿Qué comando usas para añadir un archivo al área de preparación?
+git add <nobre-archivo>
+
+¿Qué significa añadir un archivo al área de preparación?
+Significa que estamos añadiendo ese archivo o preparándolo para luego ser guardado en el historial de versiones.
+
+
+Ejercicio 7: Realizar un Commit
+¿Qué comando usas para realizar un commit?
+git commit -m "mensaje"
+
+¿Por qué es importante incluir un mensaje claro en cada commit?
+Es importante pues nos ayuda a identificar rapidamente los cambios realizados.
+
+
+Ejercicio 8: Ver el Historial de Commits
+¿Qué comando usas para ver el historial de commits?
+git log 
+
+¿Qué información muestra el historial de commits?
+Nos muestra el commit realizado con su id hash, el autor, la fecha y el mensaje del commit.
+
+
+Ejercicio 9: Crear una Nueva Rama
+¿Qué comando usas para crear una nueva rama en Git?
+git branch <nombre-rama>
+
+¿Qué diferencia hay entre crear una rama y moverte a ella?
+La diferencia es obvia, al crear una rama estamos añadiéndola y movernos a ella significa que nos posicionamos en ella para poder trabajar en la rama.
+
+
+Ejercicio 10: Listar Todas las Ramas
+¿Qué comando usas para listar todas las ramas en Git?
+git branch
+
+¿Cómo puedes identificar en qué rama estás trabajando actualmente?
+La rama en la que estoy trabajando se muestra diferenciada visualmente al ejecutar el comando anterior con un asterisco y en color verde.
+
+
+Ejercicio 11: Cambiar a una Rama Existente
+¿Qué comando usas para cambiar de rama?
+git checkout <nombre-rama>
+
+¿Cómo puedes confirmar en qué rama estás trabajando?
+Con el comando mencionado en preguntas anteriores: git branch
+
+
+Ejercicio 12: Crear y Cambiar a una Nueva Rama en un Solo Paso
+¿Qué comando permite crear y cambiar a una nueva rama en un solo paso?
+git checkout -b <nombre-rama>
+
+¿Cuál es la ventaja de usar este comando?
+Es más rápido pues nos permite hacer en un solo paso lo que antes haciamos en dos.
+
+
+Ejercicio 13: Añadir Archivos al Área de Preparación con un Comando Abreviado
+¿Qué comando abreviado puedes usar para añadir todos los cambios al área de preparación?
+
+
+¿Qué ventajas tiene usar este comando en lugar de añadir archivos individualmente?
