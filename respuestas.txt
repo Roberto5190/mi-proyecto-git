@@ -97,6 +97,31 @@ Es más rápido pues nos permite hacer en un solo paso lo que antes haciamos en 
 
 Ejercicio 13: Añadir Archivos al Área de Preparación con un Comando Abreviado
 ¿Qué comando abreviado puedes usar para añadir todos los cambios al área de preparación?
-
+git add . 
 
 ¿Qué ventajas tiene usar este comando en lugar de añadir archivos individualmente?
+Nos permite añadir todos los archivos de una manera más rápida y eficiente que uno por uno.
+
+
+Ejercicio 14: Realizar un Commit con un Mensaje Descriptivo
+¿Qué comando usas para realizar un commit?
+git commit -m "mensaje"
+
+¿Por qué es importante escribir mensajes descriptivos en los commits?
+Es importante pues nos ayuda a identificar rapidamente los cambios realizados.
+
+
+Ejercicio 15: Fusionar Ramas
+¿Qué comando usas para fusionar ramas en Git?
+Usamos dos comandos, uno para posicionarnos en la rama en la que queremos fusionar los cambios(git checkout main) y 
+otro para fusionar las ramas (git merge mejoras-ui).
+
+¿Qué sucede si hay conflictos durante la fusión?
+Deberemos resolver los conflictos en el código para poder completar la fusión.
+
+
+Ejercicio 16: Resolver Conflictos entre Ramas
+¿Qué ocurre cuando Git detecta un conflicto durante la fusión?
+
+
+¿Cómo puedes resolver un conflicto en Git?
