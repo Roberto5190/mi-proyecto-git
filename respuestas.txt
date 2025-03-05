@@ -234,3 +234,4 @@ Es una petición a los administradores de la rama principal para que revisen los
 fusionarlos con esta.
 
 ¿Qué información debes incluir en una pull request?
+Titulo descriptivo, descripción de los cambios y por qué, referenciar a la tarea asignada para ese cambio.
