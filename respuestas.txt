@@ -181,3 +181,38 @@ $ cat ~/.ssh/id_ed25519.pub | clip
 2. Ir a la configuración de GitHub y añadir la clave en la sección Deploy Keys.
 
 
+Ejercicio 21: Subir Cambios Locales a GitHub
+¿Qué comando usas para asociar un repositorio local con uno remoto?
+git remote add origin <url-repositorio>
+
+¿Qué comando usas para subir cambios locales a un repositorio remoto?
+git push -u origin <rama-principal>
+
+
+Ejercicio 22: Actualizar tu Repositorio Local desde GitHub
+¿Qué comando usas para descargar cambios del repositorio remoto?
+git pull  //descarga los cambios del remoto y los fusiona con el local.
+git fetch //descarga los cambios pero no los fusiona.
+
+¿Qué pasa si hay conflictos al sincronizar los cambios?
+Deberemos modificar los conflictos del código manualmente al igual que cuando fusionamos varias ramas y estas entran en conflicto.
+
+
+Ejercicio 23: Crear una Rama en GitHub
+¿Cómo puedes subir una rama local a un repositorio remoto?
+git checkout <rama-local> //Debemos posicionarnos primero en la rama
+git push -u origin <rama-local>
+
+¿Cómo puedes verificar que la rama ha sido creada correctamente en GitHub?
+Con el comando: git branch -r //muestra las ramas en remoto
+
+
+Ejercicio 24: Eliminar una Rama Local
+¿Qué comando usas para eliminar una rama local?
+git branch -d <rama-local>
+
+¿Es posible recuperar una rama eliminada?
+Si, tenemos que recuperar el hash del commit en el que eliminamos la rama:
+git reflog o git log
+Seguidamente podemos restaurar la rama con el comando:
+git checkout -b <rama-local> <hash del commit>
