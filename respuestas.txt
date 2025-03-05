@@ -253,3 +253,19 @@ Cuando no hay conflicto con los cambios realizados en las dos ramas.
 ¿Qué sucede después de fusionar una pull request?
 La rama en la que se han realizado los cambios se fusiona con la rama principal(o en la que queramos fusionarlo).
 
+
+Ejercicio 29: Descartar Cambios Locales
+¿Qué comando usas para descartar cambios locales?
+git checkout -- <archivo>
+
+¿Cuándo es útil descartar cambios locales?
+Cuando hice cambios locales y no quiero añadirlos en el proximo commit.
+
+
+Ejercicio 30: Restaurar un Commit Anterior
+¿Qué comando usas para restaurar un commit anterior?
+git revert <id-del-commit>.
+
+¿Qué precauciones debes tomar al restaurar un commit anterior?
+Revisar que realmente es necesario deshacer el commit y que no entrara en conflicto con otros cambios realizados.
+
