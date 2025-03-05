@@ -269,5 +269,3 @@ git revert <id-del-commit>.
 ¿Qué precauciones debes tomar al restaurar un commit anterior?
 Revisar que realmente es necesario deshacer el commit y que no entrara en conflicto con otros cambios realizados.
 
-
-Linea de pruena para revertir el commit.
