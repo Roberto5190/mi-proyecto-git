@@ -142,3 +142,42 @@ Dentro del archivo especificamos estos archivos a través de su extensión o del
 archivos que tengamos con la misma extensión se incluyan en el rastreo.
 
 
+Ejercicio 18: Configurar Git para Ignorar Cambios en un Archivo Específico
+¿Cómo puedes hacer que Git ignore los cambios en un archivo específico sin eliminarlo del repositorio?
+Con el comando git update-index --assume-unchanged <nombre-archivo>.
+
+¿En qué situaciones sería útil esta técnica?
+Por ejemplo cuando cada persona que trabaja en el proyecto necesita un archivo de configuración local personalizada.
+
+
+Ejercicio 19: Clonar un Repositorio Remoto
+¿Qué comando usas para clonar un repositorio remoto?
+git clone <url-repositorio>
+
+¿Qué diferencia hay entre clonar un repositorio y crear uno nuevo?
+Cuando clonamos un respositorio necesitamos que este ya este creado previamente y lo que hacemos es descargarlo en local desde el remoto.
+
+
+Ejercicio 20: Conectarte a GitHub con SSH
+¿Qué es SSH y por qué es importante para trabajar con GitHub?
+SSH es un protocolo de comunicación que nos permite tener una conexión cifrada entre el ordenador y un servidor remoto.
+Para trabajar con github es importante pues nos permite realizar acciones de git(clonar, push, pull...) en el repositorio sin tener que autentificarnos cada vez.
+
+¿Cómo puedes generar una clave SSH en tu computadora?
+Podemos seguir la guía de la propia pagina de github -> https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+Descrito en pasos:
+1. Ejecutar el comando: ssh-keygen -t ed25519 -C "your_email@example.com"
+2. Seguir los pasos tras ejecutar el comando que salen en consola para la configuración de la contraseña como directorio donde se genera y password.
+3. Debemos ejecutar una terminal con permisos de administrador para iniciar el agente SSH en el PC con el siguiente comando: 
+# start the ssh-agent in the background
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+Start-Service ssh-agent
+4. Agregar la clave publica al agente en una terminal sin permisos elevados: 
+ssh-add c:/Users/YOU/.ssh/id_ed25519
+
+Agregar clave ssh a la cuenta de github:
+1. Copiar la clave pública al portapapeles: 
+$ cat ~/.ssh/id_ed25519.pub | clip
+2. Ir a la configuración de GitHub y añadir la clave en la sección Deploy Keys.
+
+
