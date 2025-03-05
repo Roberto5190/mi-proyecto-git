@@ -1,4 +1,8 @@
-Ejercicio 2: Verificar la Instalación de Git
+<<<<<<< HEAD
+Ejercicio 1: Verificar la Instalación de Git
+=======
+Ejercicio 3: Verificar la Instalación de Git
+>>>>>>> conflicto-test
 
 ¿Qué comando debes usar para verificar la versión de Git?
 git -v
@@ -122,6 +126,14 @@ Deberemos resolver los conflictos en el código para poder completar la fusión.
 
 Ejercicio 16: Resolver Conflictos entre Ramas
 ¿Qué ocurre cuando Git detecta un conflicto durante la fusión?
-
+Nos da un error y nos dice que no es posible fusionar las ramas, nos sugiere corregirlos y luego usar git add/rm <file>.
+Además en el Visual Code Studio nos muestra un mensaje en las lineas del código que entran en conflicto, en este caso:
+<<<<<<< HEAD
+Ejercicio 2: Verificar la Instalación de Git
+=======
+Ejercicio 3: Verificar la Instalación de Git
+>>>>>>> conflicto-test
 
 ¿Cómo puedes resolver un conflicto en Git?
+Modificando las lineas de código que entran en conflicto.
+
