@@ -1,4 +1,4 @@
-Ejercicio 1: Verificar la Instalación de Git
+Ejercicio 3: Verificar la Instalación de Git
 
 ¿Qué comando debes usar para verificar la versión de Git?
 git -v
