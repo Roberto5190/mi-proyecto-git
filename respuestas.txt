@@ -132,3 +132,13 @@ Ejercicio 3: Verificar la Instalación de Git
 ¿Cómo puedes resolver un conflicto en Git?
 Modificando las lineas de código que entran en conflicto.
 
+
+Ejercicio 17: Crear un Archivo .gitignore
+¿Qué es un archivo .gitignore y para qué sirve?
+Un archivo .gitignore nos permite excluir del rastreo de git los archivos que queramos como logs, carpeta de dependencias de node_modules, etc.
+
+¿Cómo puedes especificar qué tipos de archivos deben ser ignorados?
+Dentro del archivo especificamos estos archivos a través de su extensión o del propio nombre del archivo si solo es uno y queremos que los demás
+archivos que tengamos con la misma extensión se incluyan en el rastreo.
+
+
