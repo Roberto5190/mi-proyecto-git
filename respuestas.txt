@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 Ejercicio 1: Verificar la Instalación de Git
-=======
-Ejercicio 3: Verificar la Instalación de Git
->>>>>>> conflicto-test
-
 ¿Qué comando debes usar para verificar la versión de Git?
 git -v
 
