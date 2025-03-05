@@ -235,3 +235,21 @@ fusionarlos con esta.
 
 ¿Qué información debes incluir en una pull request?
 Titulo descriptivo, descripción de los cambios y por qué, referenciar a la tarea asignada para ese cambio.
+
+
+Ejercicio 27: Revisar y Comentar una Pull Request
+¿Cómo puedes revisar una pull request en GitHub?
+En el apartado del repositorio(tabla de navegación) Pull Request.
+
+¿Qué tipo de comentarios son útiles en una revisión?
+Comentarios que ayuden a indentificar problemas que pueda haber con la propuesta y como solucionarlos para que no haya conflictos.
+También pueden ser de mejora del código.
+
+
+Ejercicio 28: Fusión Automática de una Pull Request
+¿Cuándo puedes fusionar una pull request automáticamente?
+Cuando no hay conflicto con los cambios realizados en las dos ramas.
+
+¿Qué sucede después de fusionar una pull request?
+La rama en la que se han realizado los cambios se fusiona con la rama principal(o en la que queramos fusionarlo).
+
