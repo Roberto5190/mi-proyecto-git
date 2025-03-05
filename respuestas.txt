@@ -216,3 +216,21 @@ Si, tenemos que recuperar el hash del commit en el que eliminamos la rama:
 git reflog o git log
 Seguidamente podemos restaurar la rama con el comando:
 git checkout -b <rama-local> <hash del commit>
+
+
+Ejercicio 25: Eliminar una Rama Remota
+¿Cómo puedes eliminar una rama remota?
+git push origin --delete <rama>
+
+¿Qué precauciones debes tomar antes de eliminar una rama remota?
+Revisar si la rama contiene cambios no actualizados en la rama principal, esto podemos verlo si lo último que se
+hizo en la rama fue fusionarla con la principal o ejecutando el comando git diff. Debemos verificar también que no 
+haya nadie más que siga trabajando en la rama.
+
+
+Ejercicio 26: Crear una Pull Request en GitHub
+¿Qué es una pull request y para qué sirve?
+Es una petición a los administradores de la rama principal para que revisen los cambios realizados en la rama y puedan 
+fusionarlos con esta.
+
+¿Qué información debes incluir en una pull request?
